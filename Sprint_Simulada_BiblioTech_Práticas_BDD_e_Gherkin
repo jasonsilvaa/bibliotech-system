@@ -1,0 +1,39 @@
+# Sprint Simulada: BiblioTech — Práticas BDD e Gherkin
+
+Este documento consolida os exercícios práticos de User Stories, cenários em linguagem Gherkin e relatórios de erro (Bug Reports) realizados durante a mentoria técnica[cite: 3].
+
+---
+
+## 1. User Story (História de Usuário)
+*   **Como** aluno da escola,
+*   **Quero** reservar um livro disponível no acervo,
+*   **Para que** eu possa garantir a leitura do material que preciso para os meus estudos[cite: 3].
+
+---
+
+## 2. Cenários em Gherkin
+
+### Cenário: Reserva bem-sucedida de um livro disponível
+*   **Dado que** sou um aluno autenticado no sistema;[cite: 3]
+*   **E** o livro 'Dom Casmurro' está com o status 'Disponível';[cite: 3]
+*   **Quando** eu selecionar o livro e clicar no botão 'Reservar';[cite: 3]
+*   **Então** o sistema deve exibir a mensagem: 'Reserva realizada com sucesso!';[cite: 3]
+*   **E** o status do livro deve ser alterado para 'Reservado'[cite: 3].
+
+### Cenário: Busca com campo vazio
+*   **Dado que** o aluno está na página inicial de busca do sistema;[cite: 3]
+*   **Quando** o aluno deixa o campo de busca em branco;[cite: 3]
+*   **E** clica no botão 'Buscar';[cite: 3]
+*   **Então** o sistema deve exibir a mensagem de erro: 'Por favor, preencha o campo título para realizar a busca'[cite: 3].
+
+---
+
+## 3. Relatório de Bug (Bug Report)
+
+| Campo | Descrição |
+|:---|:---|
+| **Título** | O sistema não exibe mensagem de erro ao buscar com campo vazio.[cite: 3] |
+| **Ambiente** | Google Chrome \| Computador da Biblioteca \| QA[cite: 3] |
+| **Passo-a-passo** | 1. Acessar tela de busca. 2. Deixar campo em branco. 3. Clicar em 'Buscar'.[cite: 3] |
+| **Resultado Esperado** | Exibir mensagem: 'Por favor, preencha o campo título'.[cite: 3] |
+| **Resultado Obtido** | Sistema limpa a tela e não apresenta erro.[cite: 3] |
