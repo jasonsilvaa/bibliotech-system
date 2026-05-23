@@ -1,0 +1,19 @@
+# Relatório de Teste Exploratório: Filtro de Ano
+
+Este documento registra a sessão de testes exploratórios realizada no sistema BiblioTech com o objetivo de validar a funcionalidade de filtro por período de publicação.
+
+## 1. Charter (Missão)
+Validar a integridade e a resposta do sistema ao aplicar filtros de data (1900–2026) na tela de busca.
+
+## 2. Registro de Execução
+
+| Hora | Ação | Resultado |
+|:---|:---|:---|
+| 17:15 | Inserir ano inferior ao permitido (1800) | Sistema validou corretamente e exibiu mensagem solicitando período válido. |
+| 17:17 | Tentar inserir caracteres alfabéticos | O campo bloqueou a entrada, impedindo o erro de digitação. |
+| 17:18 | Inserir ano superior ao permitido (2030) | Sistema validou corretamente e exibiu mensagem solicitando período válido. |
+| 17:19 | Submeter busca com campos vazios | Sistema exibiu mensagem informativa para preenchimento do filtro. |
+
+## 3. Veredito do QA
+* **Estado do Sistema:** Passou com Sucesso (Passed).
+* **Comentário Técnico:** O sistema demonstrou ser muito robusto para este requisito. Foi validada a consistência nas mensagens de erro, o tratamento de dados na interface (UI) e a aplicação correta das regras de negócio.
